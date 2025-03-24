@@ -1,0 +1,57 @@
+/* Aesthetic Form Background */
+.add-section {
+    width: 380px;
+    padding: 25px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #1e1e2e, #3a3a55);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+    color: white;
+  }
+
+  .bto{
+    position: absolute;
+    top: 20px;
+    left: -25px;
+    font-size: x-large; 
+  }
+  
+  /* Input Fields */
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .input-field:focus {
+    border-color: #ffcc00;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  
+  .add-income {
+    background: #ffcc00;
+    color: black;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 30px;
+    transition: 0.3s;
+  }
+  
+  .add-income:hover {
+    background: #ff9900;
+  }
+  

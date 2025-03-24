@@ -1,0 +1,100 @@
+/* Statics Page */
+.staticspage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header */
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Report Container */
+.reportcontainer {
+    width: 40rem;
+    max-width: 400px;
+    background: #fbf9f9;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+   gap: 10px;
+    min-height: 70vh; /* Ensures full height */
+    padding-bottom: 100px;
+}
+
+/* Report Item */
+.reportcontainer p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #444;
+    text-align: center;
+}
+
+/* Income & Expense Items */
+.reportincome, 
+.reportexpense {
+    border-radius: 10px;
+    width: 23rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Income Styling */
+.reportincome {
+    background: rgb(66, 248, 81);
+    color: white;
+}
+
+/* Expense Styling */
+.reportexpense {
+    background: rgb(252, 61, 61);
+    color: white;
+}
+
+/* Hover Effects */
+.reportincome:hover, 
+.reportexpense:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Notification Content */
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .reportcontainer {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .reportincome, 
+    .reportexpense {
+        width: 100%;
+        padding: 8px;
+    }
+}

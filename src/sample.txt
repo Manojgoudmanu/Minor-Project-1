@@ -1,0 +1,159 @@
+* {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+#firstbox {
+  display: grid;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(231, 118, 248);
+}
+#firstbox div {
+  padding: 10px;
+}
+#firstbox div:nth-child(1) {
+  flex-basis: 100%;
+  text-align: center;
+}
+#firstbox div:nth-child(2) {
+  flex-basis: 50%;
+  text-align: center;
+}
+#firstbox div:nth-child(3) {
+  flex-basis: 50%;
+  text-align: center;
+}
+main {
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 1rem auto;
+  background-color: #faf6f6;
+  padding: 1rem;
+  box-shadow: 10px 10px 10px 10px rgba(248, 4, 4, 0.1);
+}
+#secondbox h3 {
+  text-align: center;
+  background-color: rgb(246, 248, 248);
+  border-radius: 20px;
+  padding: 5px;
+}
+#secondbox h3:hover {
+  background-color: greenyellow;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+form input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 42px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: medium;
+}
+form div:nth-child(1) {
+  flex-basis: 100%;
+}
+form div:nth-child(2) {
+  flex-basis: 50%;
+  padding: 10px;
+}
+form div:nth-child(3) {
+  flex-basis: 50%;
+  padding: 10px;
+}
+#button {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00ff73;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+span{
+    font-size: large;
+}
+
+
+
+
+//html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>expence tracker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+   <main>
+    <h1>Expence tracker</h1>
+
+    <div id="firstbox">
+      <div>
+        <h2>Total Balance</h2>
+        <input type="number" id="income" placeholder="0" min="0.00" step="0.01" required>
+      </div>
+
+      <div>
+        <h2>Total expence</h2>
+        <span id="expence"> </span>
+      </div>
+
+      <div>
+        <h2>Remaing Balance</h2>
+        <span id="balance"> </span>
+      </div>
+    </div>
+
+    <section id="secondbox">
+      <h3>Transactions history</h3>
+      <ul id="Transactions">
+        <div id="list"></div>
+      </ul>
+    </section>
+    <section>
+      <form id="expenceform">
+        <div id="namebox">
+          <label for="name">PRODUCT</label>
+          <input id="name" type="text" name="name" required />
+        </div>
+        <div id="amountbox">
+          <label for="amount">AMOUNT</label>
+          <input id="amount" type="number" name="amount" min="0.00" step="0.01" required />
+        </div>
+        <div id="datebox">
+          <label for="date">DATE</label>
+          <input id="date" type="date" name="date" required />
+        </div>
+        <button id="button">SUBMIT</button>
+      </form>
+      <ul id="storeddata"></ul>
+    </section>
+   </main>
+   <script src="./tracker.js" ></script>
+  </body>
+</html>

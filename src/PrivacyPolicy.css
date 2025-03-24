@@ -1,0 +1,47 @@
+.privacy-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .buto{
+    position: absolute;
+    top: 5px;
+    left: 300px;
+    font-size: x-large; 
+    
+}
+  
+  h1 {
+    text-align: center;
+    color: #6c5ce7;
+  }
+  
+  section {
+    margin: 20px 0;
+  }
+  
+  h2 {
+    color: #0984e3;
+  }
+  
+  p, ul {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  a {
+    color: #00b894;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

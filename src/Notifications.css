@@ -1,0 +1,47 @@
+.notifications-panel {
+    width: 40rem;
+    max-width: 400px;
+    background: #fbf9f9;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh; /* Ensures full height */
+    padding-bottom: 90px;
+    
+  }
+  
+  .notifications-panel h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .notification-item{
+    
+    color: #0f0f0f;
+    border-radius: 10px;
+    width: 23rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8px;
+    
+  }
+  .expensecontainer{
+    background-color: rgb(252, 61, 61);
+
+  }
+  .incomecontainer{
+    background-color:rgb(66, 248, 81);
+  }
+  .notification-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 7rem;
+  }

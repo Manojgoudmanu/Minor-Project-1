@@ -1,0 +1,76 @@
+.body,html{
+    margin: 0px;
+    padding: 0px;
+  
+
+    
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+    height: 150vh;
+    width : 150vw;
+   
+    
+    
+  }
+  
+  /* Card */
+  .containercard {
+    background-color: rgb(251, 246, 246);
+    border-radius: 24px;
+    max-width: 350px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 20px 10px 10px rgba(224, 11, 25, 0.1);
+  }
+  
+  /* Image */
+  .Imagecard {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .WalletImage {
+    width: 170px;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  /* Title */
+  .Title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f2937; /* Dark gray */
+    margin-top: 15px;
+  }
+  
+  /* Subtitle */
+  .Subtitle {
+    color: #6b7280; /* Gray */
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Button */
+  .Startbutton {
+    background-color: #9333ea; /* Purple */
+    color: white;
+    padding: 12px 20px 15px ;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: background-color 0.1s ease;
+  }
+  
+  /* Hover Effect */
+  .Startbutton:hover {
+    background-color: #7e22ce;
+    transform: scale(1.1);
+  }
